@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 초기화 */
+@import url(./styles/reset.css);
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  main {
+    overflow: hidden;
+    width: 390px;
+    height: 800px;
+    border: 1px solid #ccc;
+    header {
+      width: 100%;
+      height: 47px;
+      border-bottom: 1px solid #ccc;
+    }
+    #main_Title {
+      font-size: 1.8rem;
+      margin: 50px 0 40px 35px;
+    }
+    #navigation {
+      width: 500px;
+      margin-left: 35px;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 30px;
+      .nav-Item {
+        font-size: 1.2rem;
+        font-weight: 700;
+        &:first-child {
+          background-color: #000;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 28px;
+          .fa-heart {
+            color: crimson;
+            font-size: 0.8rem;
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+    section {
+      width: 100%;
+      padding: 40px 35px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
