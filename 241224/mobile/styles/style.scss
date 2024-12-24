@@ -1,0 +1,30 @@
+@import "./reset";
+// $main-bgColor: #ffde03;
+// $sub-bgColor: #4833cc;
+// $text-mainColor: #ccc;
+$contents-Colors: (
+  bgColor: #ffde03,
+  subColor: #4833cc,
+  textColor: #ccc,
+);
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  main {
+    width: 428px;
+    height: 926px;
+    background-color: map-get(
+      $map: (
+        $contents-Colors,
+      ),
+      $key: bgColor
+    );
+    box-shadow: 4px 4px 8px rgba($color: #000, $alpha: 0.6);
+  }
+}
+h1 {
+  color: crimson;
+}
