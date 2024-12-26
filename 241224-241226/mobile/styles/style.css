@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+body main {
+  width: 428px;
+  height: 926px;
+  background: #ffde03;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
+}
+body main #topContents {
+  text-align: center;
+}
+body main #topContents img {
+  margin-bottom: 30px;
+}
+body main #topContents h4 {
+  font-size: 1.17rem;
+  font-weight: lighter;
+}
+body main #topContents h4 span {
+  font-weight: bold;
+}
+body main #snsLogo {
+  margin: 200px 0;
+  text-align: center;
+}
+body main #snsLogo h4 {
+  font-size: 0.94rem;
+  font-weight: lighter;
+  color: #4833cc;
+}
+body main #snsLogo ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body main #bottomContents {
+  padding: 0 34px;
+}
+body main #bottomContents .btn {
+  margin-bottom: 12px;
+  text-align: center;
+  background-color: #f5efef;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  line-height: 45px;
+  font-size: 1.17rem;
+  color: #606060;
+}
+body main #bottomContents #userSearch {
+  text-align: center;
+  color: #606060;
+  font-size: 1.17rem;
+}
+body main #bottomContents #userSearch span {
+  cursor: pointer;
+}
+body main #bottomContents #userSearch span:first-child {
+  margin-right: 78px;
+  position: relative;
+}
+body main #bottomContents #userSearch span:first-child::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  right: -40px;
+  top: 25%;
+  background-color: #606060;
+}
+body main.introBg {
+  background-color: #fff;
+  padding: 60px 34px 135px;
+}
+body main.introBg header {
+  width: 100%;
+  height: 142px;
+  position: relative;
+}
+body main.introBg header h4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.17rem;
+  font-weight: lighter;
+}
+body main.introBg header p {
+  font-size: 1.47rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body main.introBg header p span {
+  font-weight: bold;
+}
