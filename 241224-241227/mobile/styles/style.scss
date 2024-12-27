@@ -1,6 +1,41 @@
 @import "./reset";
 @import "./variables";
 
+@mixin buttonStyle {
+  margin-bottom: 12px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  line-height: 45px;
+  font-size: 1.17rem;
+  color: map-get($contents-Colors, textColor);
+}
+@mixin headerStyle {
+  background-color: map-get($contents-Colors, lightColor);
+  padding: 60px 34px 135px;
+  header {
+    width: 100%;
+    height: 142px;
+    position: relative;
+    h4 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.17rem;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 1.47rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
 body {
   width: 100%;
   height: 100vh;
@@ -15,6 +50,9 @@ body {
     background: map-get($contents-Colors, bgColor);
     box-shadow: 4px 4px 8px rgba($color: #000, $alpha: 0.6);
     padding-top: 60px;
+    .btn {
+      @include buttonStyle;
+    }
     // index
     #topContents {
       text-align: center;
@@ -48,15 +86,7 @@ body {
     #bottomContents {
       padding: 0 34px;
       .btn {
-        margin-bottom: 12px;
-        text-align: center;
         background-color: map-get($contents-Colors, btnColor);
-        display: block;
-        width: 100%;
-        border-radius: 8px;
-        line-height: 45px;
-        font-size: 1.17rem;
-        color: map-get($contents-Colors, textColor);
       }
       #userSearch {
         text-align: center;
@@ -82,28 +112,29 @@ body {
     }
     // intro
     &.introBg {
-      background-color: map-get($contents-Colors, lightColor);
-      padding: 60px 34px 135px;
       header {
+        @include headerStyle();
+      }
+      section {
+        margin: 50px 0 106px;
         width: 100%;
-        height: 142px;
-        position: relative;
-        h4 {
-          position: absolute;
-          right: 0;
-          top: 0;
-          font-size: 1.17rem;
-          font-weight: lighter;
+        text-align: center;
+        img {
+          width: 60%;
         }
-        p {
-          font-size: 1.47rem;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          span {
-            font-weight: bold;
-          }
+      }
+      footer {
+        .btn {
+          margin-top: 10px;
+          background-color: map-get($contents-Colors, bgColor);
         }
+      }
+    }
+    // friends
+    &.friendsBg {
+      @include headerStyle;
+      header {
+        height: 172px;
       }
     }
   }

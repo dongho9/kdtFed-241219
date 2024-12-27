@@ -29,6 +29,16 @@ body main {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
   padding-top: 60px;
 }
+body main .btn {
+  margin-bottom: 12px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  line-height: 45px;
+  font-size: 1.17rem;
+  color: #606060;
+}
 body main #topContents {
   text-align: center;
 }
@@ -62,15 +72,7 @@ body main #bottomContents {
   padding: 0 34px;
 }
 body main #bottomContents .btn {
-  margin-bottom: 12px;
-  text-align: center;
   background-color: #f5efef;
-  display: block;
-  width: 100%;
-  border-radius: 8px;
-  line-height: 45px;
-  font-size: 1.17rem;
-  color: #606060;
 }
 body main #bottomContents #userSearch {
   text-align: center;
@@ -93,28 +95,68 @@ body main #bottomContents #userSearch span:first-child::after {
   top: 25%;
   background-color: #606060;
 }
-body main.introBg {
+body main.introBg header {
   background-color: #fff;
   padding: 60px 34px 135px;
 }
-body main.introBg header {
+body main.introBg header header {
   width: 100%;
   height: 142px;
   position: relative;
 }
-body main.introBg header h4 {
+body main.introBg header header h4 {
   position: absolute;
   right: 0;
   top: 0;
   font-size: 1.17rem;
   font-weight: lighter;
 }
-body main.introBg header p {
+body main.introBg header header p {
   font-size: 1.47rem;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-body main.introBg header p span {
+body main.introBg header header p span {
   font-weight: bold;
+}
+body main.introBg section {
+  margin: 50px 0 106px;
+  width: 100%;
+  text-align: center;
+}
+body main.introBg section img {
+  width: 60%;
+}
+body main.introBg footer .btn {
+  margin-top: 10px;
+  background-color: #ffde03;
+}
+body main.friendsBg {
+  background-color: #fff;
+  padding: 60px 34px 135px;
+}
+body main.friendsBg header {
+  width: 100%;
+  height: 142px;
+  position: relative;
+}
+body main.friendsBg header h4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.17rem;
+  font-weight: lighter;
+}
+body main.friendsBg header p {
+  font-size: 1.47rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body main.friendsBg header p span {
+  font-weight: bold;
+}
+body main.friendsBg header {
+  height: 172px;
 }
