@@ -10,29 +10,45 @@
   line-height: 45px;
   font-size: 1.17rem;
   color: map-get($contents-Colors, textColor);
+  position: relative;
+  z-index: 2;
 }
 @mixin headerStyle {
-    background-color: map-get($contents-Colors, lightColor);
-    width: 100%;
-    height: 142px;
-    position: relative;
-    h4 {
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 1.17rem;
-      font-weight: lighter;
-    }
-    p {
-      font-size: 1.47rem;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      span {
-        font-weight: bold;
-      }
+  background-color: map-get($contents-Colors, lightColor);
+  width: 100%;
+  height: 142px;
+  position: relative;
+  z-index: 2;
+  h4 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.17rem;
+    font-weight: lighter;
+  }
+  p {
+    font-size: 1.47rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    span {
+      font-weight: bold;
     }
   }
+}
+@mixin filterTemplate {
+  content: "";
+  position: absolute;
+  width: 428px;
+  height: 439px;
+  background: linear-gradient(
+    to bottom,
+    map-get($contents-Colors, lightColor) 78%,
+    transparent
+  );
+  left: 0;
+  z-index: 1;
+}
 body {
   width: 100%;
   height: 100vh;
@@ -50,7 +66,7 @@ body {
       @include buttonStyle;
     }
     // index
-    &.indexBg{
+    &.indexBg {
       background: map-get($contents-Colors, bgColor);
       #topContents {
         text-align: center;
@@ -125,15 +141,56 @@ body {
         .btn {
           margin-top: 10px;
           @include buttonStyle();
-          background-color: map-get($contents-Colors, bgColor)
+          background-color: map-get($contents-Colors, bgColor);
         }
       }
     }
     // friends
     &.friendsBg {
+      position: relative;
       header {
         @include headerStyle;
         height: 172px;
+      }
+      section {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .slides {
+          li {
+            text-align: center;
+            a {
+              font-size: 2.35rem;
+            }
+          }
+        }
+      }
+      &::before {
+        @include filterTemplate;
+        top: 0;
+      }
+      &::after {
+        @include filterTemplate;
+        bottom: 0;
+        transform: rotate(180deg);
+      }
+      footer {
+        .buttons {
+          width: 100%;
+          position: absolute;
+          bottom: 75px;
+          display: flex;
+          gap: 12px;
+          .btn {
+            width: 174px;
+            background-color: map-get($contents-Colors, bgColor);
+            &:first-child {
+              background-color: map-get($contents-Colors, btnColor);
+            }
+          }
+        }
       }
     }
   }

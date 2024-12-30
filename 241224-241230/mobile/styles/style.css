@@ -37,6 +37,8 @@ body main .btn {
   line-height: 45px;
   font-size: 1.17rem;
   color: #606060;
+  position: relative;
+  z-index: 2;
 }
 body main.indexBg {
   background: #ffde03;
@@ -99,6 +101,7 @@ body main.introBg header {
   width: 100%;
   height: 142px;
   position: relative;
+  z-index: 2;
 }
 body main.introBg header h4 {
   position: absolute;
@@ -134,13 +137,19 @@ body main.introBg footer .btn {
   line-height: 45px;
   font-size: 1.17rem;
   color: #606060;
+  position: relative;
+  z-index: 2;
   background-color: #ffde03;
+}
+body main.friendsBg {
+  position: relative;
 }
 body main.friendsBg header {
   background-color: #fff;
   width: 100%;
   height: 142px;
   position: relative;
+  z-index: 2;
   height: 172px;
 }
 body main.friendsBg header h4 {
@@ -158,4 +167,52 @@ body main.friendsBg header p {
 }
 body main.friendsBg header p span {
   font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+}
+body main.friendsBg section {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main.friendsBg section .slides li {
+  text-align: center;
+}
+body main.friendsBg section .slides li a {
+  font-size: 2.35rem;
+}
+body main.friendsBg::before {
+  content: "";
+  position: absolute;
+  width: 428px;
+  height: 439px;
+  background: linear-gradient(to bottom, #fff 78%, transparent);
+  left: 0;
+  z-index: 1;
+  top: 0;
+}
+body main.friendsBg::after {
+  content: "";
+  position: absolute;
+  width: 428px;
+  height: 439px;
+  background: linear-gradient(to bottom, #fff 78%, transparent);
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+body main.friendsBg footer .buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 75px;
+  display: flex;
+  gap: 12px;
+}
+body main.friendsBg footer .buttons .btn {
+  width: 174px;
+  background-color: #ffde03;
+}
+body main.friendsBg footer .buttons .btn:first-child {
+  background-color: #f5efef;
+}
