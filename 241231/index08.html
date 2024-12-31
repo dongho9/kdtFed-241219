@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>241231-08</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form action="#" action="post">
+      <div>
+        <h2>신청과목</h2>
+        <h4>이 달에 신청할 과목을 선택하세요!(*1과목만 선택가능)</h4>
+        <label for="ob"><input id="ob" type="radio" name="ob" />회화</label>
+        <label for="ob2"><input id="ob2" type="radio" name="ob" />문법</label>
+        <label for="ob3"><input id="ob3" type="radio" name="ob" />작문</label>
+      </div>
+      <div>
+        <h2>메일링</h2>
+        <h4>메일로 받고 싶은 뉴스 주제를 선택해 주세요!(*복수 선택 가능)</h4>
+        <label for="mail01">
+          <input id="mail01" type="checkbox" />해외단신
+        </label>
+        <label for="mail02">
+          <input id="mail02" type="checkbox" />5분회화
+        </label>
+        <label for="mail03">
+          <input id="mail03" type="checkbox" />모닝팝스
+        </label>
+      </div>
+    </form> -->
+    <form action="#" action="post">
+      <fieldset>
+        <legend><b>신청과목</b></legend>
+        <p>이 달에 신청할 과목을 선택하세요!(*1과목만 선택가능)</p>
+        <label for="ob"><input id="ob" type="radio" name="ob" />회화</label>
+        <label for="ob2"><input id="ob2" type="radio" name="ob" />문법</label>
+        <label for="ob3"><input id="ob3" type="radio" name="ob" />작문</label>
+      </fieldset>
+      <fieldset>
+        <legend><b>메일링</b></legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요!(*복수 선택가능)</p>
+        <label for="news01"
+          ><input id="news01" type="checkbox" name="news01" />해외단신</label
+        >
+        <label for="news02"
+          ><input id="news02" type="checkbox" name="news02" />5분회화</label
+        >
+        <label for="news03"
+          ><input id="news03" type="checkbox" name="news03" />모닝팝스</label
+        >
+      </fieldset>
+      <p>하고 싶은 이야기</p>
+      <!-- 댓글창, 코멘트 등의 사용자 값을 입력받을 때 사용 -->
+      <textarea
+        name="myStory"
+        id="myStory"
+        placeholder="당신의 이야기"
+        rows="10"
+        cols="50"
+      ></textarea>
+      <h4>오늘 저녁 분식은 어떠세요?</h4>
+      <!-- 여러가지 중 선택할 수 있는 태그, 옵션과 사용 -->
+      <select name="food" id="food">
+        <!-- 첫번째 옵션 -->
+        <option selected disabled value="none">
+          원하시는 메뉴를 선택하세요
+        </option>
+        <option value="kimbab">김밥</option>
+        <option value="deokbokki">떡볶이</option>
+        <option value="soondae">순대</option>
+        <option value="boonga">붕어빵</option>
+      </select>
+    </form>
+  </body>
+</html>

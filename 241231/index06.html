@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>241231-06</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 100%;
+        height: 100vh;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .desc {
+          position: absolute;
+          z-index: 2;
+          top: 40%;
+          left: 10%;
+          color: #fff;
+          text-align: center;
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <audio src="./contents/audio.mp4" controls autoplay loop></audio> -->
+    <!-- controls = 컨트롤바, autoplay = 자동재생, loop = 무한재생 -->
+    <main>
+      <video src="./contents/video.mp4" autoplay loop></video>
+      <div class="desc">
+        <h2>my Portfolio</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui illum
+          inventore voluptatum error at maxime voluptates nostrum, amet earum
+          doloribus omnis. Possimus similique dolores fugiat eligendi minus
+          temporibus repudiandae minima!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
