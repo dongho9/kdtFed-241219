@@ -3,145 +3,353 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이젠아카데미 생성형 AI 프론트엔드 개발자과정</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
-      rel="stylesheet"
-    />
+    <title>프론트엔드 개발자과정 - 강동호</title>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      body {
-        font-family: "Gowun Batang", serif;
+      ul,
+      li {
+        list-style: none;
       }
       a {
         text-decoration: none;
-        color: #000;
+        color: inherit;
+      }
+      body {
+        background-color: #1b1b19;
+        color: #fec0bc;
+      }
+      .headermove {
+        top: -150px;
+      }
+      header {
+        top: 0;
+        transition: top 0.3s ease-in-out; /* top 속성에 transition 적용 */
+        position: fixed;
+        padding: 0 50px;
+        width: 100%;
+        background-color: transparent;
+        line-height: 70px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
       }
       h1 {
-        text-align: center;
         font-size: 24px;
-        line-height: 60px;
+      }
+      .gnb > ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+      .gnb > ul > li > a {
+        transition: 0.3s;
+        display: block;
+      }
+      .gnb > ul > li:hover > a {
+        color: #fff;
+      }
+      .gnb li {
+        position: relative;
+      }
+
+      .submenu {
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        background-color: transparent;
+        min-width: 150px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none; /* 초기에는 숨겨짐 */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .submenu li {
+        padding: 10px;
+        line-height: 35px;
+      }
+
+      .submenu li a {
+        color: #fec0bc;
+      }
+      .submenu li a {
+        display: block;
+        transition: 0.3s;
+      }
+      .submenu li a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+
+      /* 리스트 */
+      main {
+        text-align: center;
+        padding-top: 130px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
       }
       dl {
-        width: 800px;
-        margin: 0 auto;
-        line-height: 50px;
+        width: 70%;
+        line-height: 80px;
       }
       dt {
-        background-color: rgb(49, 80, 82);
         font-size: 24px;
+        text-align: left;
         color: #fff;
+        font-weight: bold;
       }
       dd {
         transition: 0.3s;
+        padding: 0 20px;
       }
       dd:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: #fff;
+        border-radius: 30px;
       }
       dd:hover a {
-        color: #fff;
+        color: #000;
+        font-weight: bold;
       }
       dd a {
         display: flex;
         justify-content: space-between;
       }
+
+      @media screen and (max-width: 1024px) {
+        dl {
+          width: 90%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 18px;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>이젠아카데미 생성형 AI 프론트엔드 개발자과정</h1>
-    <dl>
-      <dt>241219</dt>
-      <dd>
-        <a href="./241219/index.html" title="241219-01">
-          <span>241219-01</span>
-          <span>HTML 기초1</span>
-        </a>
-      </dd>
-      <dt>241220</dt>
-      <dd>
-        <a href="./241220/svg/index.html" title="241220-01">
-          <span>241220-01</span>
-          <span>HTML 기초2</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241220/mobile/index.html" title="241220-02">
-          <span>241220-02</span>
-          <span>HTML 기초3</span>
-        </a>
-      </dd>
-      <dt>241224-241230</dt>
-      <dd>
-        <a href="./241224-241230/index.html" title="241224-01">
-          <span>241224-01</span>
-          <span>HTML 기초4</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241224-241230/mobile/index.html" title="241230-01">
-          <span>241230-01</span>
-          <span>편한 친구만들기 벗,AND</span>
-        </a>
-      </dd>
-      <dt>241231</dt>
-      <dd>
-        <a href="./241231/index.html" title="241231-01">
-          <span>241231-01</span>
-          <span>HTML 기초5</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index02.html" title="241231-02">
-          <span>241231-02</span>
-          <span>table 태그 - 01</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index03.html" title="241231-03">
-          <span>241231-03</span>
-          <span>table 태그 - 03</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index04.html" title="241231-04">
-          <span>241231-04</span>
-          <span>table 태그 - 04</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index05.html" title="241231-05">
-          <span>241231-05</span>
-          <span>이미지</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index06.html" title="241231-06">
-          <span>241231-06</span>
-          <span>비디오 오디오</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index07.html" title="241231-07">
-          <span>241231-07</span>
-          <span>폼 태그 - 01</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index08.html" title="241231-08">
-          <span>241231-08</span>
-          <span>폼 태그 - 02</span>
-        </a>
-      </dd>
-      <dd>
-        <a href="./241231/index09.html" title="241231-09">
-          <span>241231-09</span>
-          <span>공간분할태그</span>
-        </a>
-      </dd>
-    </dl>
+    <header>
+      <h1>이젠아카데미 생성형 AI 프론트엔드 개발자과정</h1>
+      <nav class="gnb">
+        <ul>
+          <li>
+            <a href="#">DesignKits</a>
+            <ul class="submenu">
+              <li>
+                <a href="https://wsss.tistory.com/" target="_blank"
+                  >DesignKits01</a
+                >
+              </li>
+              <li>
+                <a href="https://www.designkits.co.kr/blog/" target="_blank"
+                  >DesignKits02</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Reference</a>
+            <ul class="submenu">
+              <li>
+                <a href="https://www.gdweb.co.kr/" target="_blank">Gdweb</a>
+              </li>
+              <li>
+                <a href="https://www.awwwards.com/" target="_blank">Awwards</a>
+              </li>
+              <li>
+                <a href="https://www.cssdesignawards.com/" target="_blank"
+                  >Css Deisgn Awards</a
+                >
+              </li>
+              <li>
+                <a href="https://www.siteinspire.com/" target="_blank"
+                  >SiteInspire</a
+                >
+              </li>
+              <li>
+                <a href="https://www.s5-style.com/" target="_blank">S5</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BookMark</a>
+            <ul class="submenu">
+              <li>
+                <a href="https://app.slack.com/" target="_blank">Slack</a>
+              </li>
+              <li>
+                <a href="https://www.figma.com/" target="_blank">Figma</a>
+              </li>
+              <li>
+                <a href="https://kr.pinterest.com/" target="_blank"
+                  >Pinterest</a
+                >
+              </li>
+              <li>
+                <a href="https://unsplash.com" target="_blank">Unsplash</a>
+              </li>
+              <li>
+                <a href="https://www.pexels.com" target="_blank">Pexels</a>
+              </li>
+              <li><a href="https://pixabay.com" target="_blank">Pixabay</a></li>
+              <li>
+                <a href="https://chatgpt.com/" target="_blank">Chatgpt</a>
+              </li>
+              <li>
+                <a href="https://fonts.google.com/" target="_blank"
+                  >GooglFonts</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <dl>
+          <dt>241219</dt>
+          <dd>
+            <a href="./241219/index.html" title="241219-01">
+              <span>241219-01</span>
+              <span>HTML 기초1</span>
+            </a>
+          </dd>
+          <dt>241220</dt>
+          <dd>
+            <a href="./241220/svg/index.html" title="241220-01">
+              <span>241220-01</span>
+              <span>HTML 기초2</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241220/mobile/index.html" title="241220-02">
+              <span>241220-02</span>
+              <span>HTML 기초3</span>
+            </a>
+          </dd>
+          <dt>241224 - 241230</dt>
+          <dd>
+            <a href="./241224-241230/index.html" title="241224-01">
+              <span>241224-01</span>
+              <span>HTML 기초4</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241224-241230/mobile/index.html" title="241230-01">
+              <span>241230-01</span>
+              <span>편한 친구만들기 벗,AND</span>
+            </a>
+          </dd>
+          <dt>241231</dt>
+          <dd>
+            <a href="./241231/index.html" title="241231-01">
+              <span>241231-01</span>
+              <span>HTML 기초5</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index02.html" title="241231-02">
+              <span>241231-02</span>
+              <span>table 태그 - 01</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index03.html" title="241231-03">
+              <span>241231-03</span>
+              <span>table 태그 - 03</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index04.html" title="241231-04">
+              <span>241231-04</span>
+              <span>table 태그 - 04</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index05.html" title="241231-05">
+              <span>241231-05</span>
+              <span>이미지</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index06.html" title="241231-06">
+              <span>241231-06</span>
+              <span>비디오 오디오</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index07.html" title="241231-07">
+              <span>241231-07</span>
+              <span>폼 태그 - 01</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index08.html" title="241231-08">
+              <span>241231-08</span>
+              <span>폼 태그 - 02</span>
+            </a>
+          </dd>
+          <dd>
+            <a href="./241231/index09.html" title="241231-09">
+              <span>241231-09</span>
+              <span>공간분할태그</span>
+            </a>
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <script>
+      let menuli = document.querySelectorAll(".gnb > ul > li");
+
+      menuli.forEach(function (menulis) {
+        menulis.addEventListener("mouseover", function () {
+          let sub = menulis.querySelector(".submenu");
+          sub.style.display = "block";
+        });
+        menulis.addEventListener("mouseleave", function () {
+          let sub = menulis.querySelector(".submenu");
+          sub.style.display = "none";
+        });
+      });
+
+      let prevscroll = 0;
+      window.addEventListener("scroll", function () {
+        let scrolltop = window.scrollY; // 현재 스크롤 위치를 저장
+        let hd = document.querySelector("header"); // header 요소 선택
+
+        // 스크롤 위치가 이전 위치보다 커지면 "headermove" 클래스를 추가
+        if (scrolltop > prevscroll) {
+          hd.classList.add("headermove");
+        } else {
+          hd.classList.remove("headermove");
+        }
+
+        prevscroll = scrolltop; // 이전 스크롤 위치를 업데이트
+      });
+
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        // console.log(e)
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
