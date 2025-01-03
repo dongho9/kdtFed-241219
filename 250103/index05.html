@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>250103-05</title>
+    <style>
+      p {
+        counter-increment: num;
+        &::before {
+          content: counter(num) ".";
+        }
+        &::after {
+          content: "- " attr(data-page) "page";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 문자선택자 -->
+    <h1>lorem ipsum dolor sit amet</h1>
+    <p data-page="52">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, vel
+      dolores! Laborum, harum! Eius cumque provident, debitis fugiat deleniti
+      incidunt! Placeat, et expedita! Sunt consectetur ea officiis recusandae
+      sequi odio.
+    </p>
+    <p data-page="273">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eum
+      sapiente molestias nemo officiis tenetur, maiores facere placeat fugiat
+      dolores, non perferendis, distinctio sed est error explicabo mollitia
+      eligendi vel! Nulla dolore dicta at eaque delectus minima. Natus sequi
+      possimus nam! Voluptas natus ad minus ea in eveniet illum recusandae
+      cupiditate delectus consequatur eos, rerum, beatae aliquam dicta maiores?
+      Magnam. Odit tempora rerum doloribus nam accusantium expedita, nobis et
+      aut at quo quibusdam iste magnam ducimus fugit mollitia modi eligendi
+      officia cupiditate accusamus rem similique porro? Quia reprehenderit at
+      sint? Aspernatur libero quisquam magnam omnis nihil laborum ipsam
+      exercitationem assumenda, vel nesciunt a in excepturi dolor minima soluta
+      hic delectus explicabo. Dolorum quibusdam commodi voluptatem perferendis
+      illum architecto laudantium dolorem.
+    </p>
+  </body>
+</html>
