@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>250106-06</title>
+    <!-- 박스사이징, 볼더 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background: crimson;
+        padding: 30px;
+        margin: 50px;
+        color: #fff;
+        line-height: 140px;
+        text-align: center;
+        &:first-child {
+          border: 8px dotted #000;
+          border-radius: 40px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+  </body>
+</html>
