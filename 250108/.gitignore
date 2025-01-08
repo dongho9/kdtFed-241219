@@ -1,4 +1,5 @@
 .vscode
 public
+.firebase
 .firebaserc
 firebase.json
