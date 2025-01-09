@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Profile</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3cf85cf1af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body class="member01">
+    <main>
+      <nav id="menu">
+        <a href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-xmark"></i>
+        </a>
+      </nav>
+      <article>
+        <img src="./img/member1.jpg" alt="member1" />
+        <h1>EZEN LAB</h1>
+        <h2>UI/UX INTERACTIVE DEVELOPER</h2>
+        <a href="#">VIEW MORE</a>
+      </article>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            <span>Visit My Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-tiktok"></i>
+            <span>Welcome to my SNS</span>
+          </a>
+        </li>
+      </ul>
+      <nav id="others">
+        <a class="on" href="./index.html"></a>
+        <a href="./member02.html"></a>
+        <a href="./member03.html"></a>
+        <a href="./member04.html"></a>
+      </nav>
+    </main>
+  </body>
+</html>
+<!-- 
+  1. SSR - SERVER SIDE RENDERING
+    - CLIENT가 요청할 때마다 SERVER가 요청을 받은 페이지를 매번 새롭게 제공해주는 방식
+  2. CSR - CLIENT SIDE RENDERING (React)
+    1.  CLIENT가 어떤 페이지를 요청 
+    2. 해당 메인페이지 뿐만 아니라 메인페이지 안에 연결되어 있는 모든 페이지의 소스 정보를 한 번에 SERVER가 CLIENT에게 전달
+    3. 다른 페이지 이동할 때 깜박거림이 해소 페이지 이동 매우 빠름
+  3. SPA - SINGLE PAGE APPLICATION
+    - 1개의 HTML > 복수의 JS 연결해서 여려 개의 페이지를 구현할 수있도록 만든 앱 설계 방식의 페이지 
+    - PAGE ROUTING 
+  4. React.js 단점
+    - 사용자 입장에서 특정 웹 사이트의 메인페이지를 처음 열어볼 때 만약 메인페이지 안에 고용량의 동영상 혹은 이미지가 들어있었다면 해당 메인페이지를 로딩하는데 굉장히 더디게 출력된다. 
+    - TTI(Time To Interval) -CLIENT가 SERVER에게 페이지를 요청한 이후에 FCP 단계까지 걸리는 인터벌 시간
+    - FCP가 비효율적(FIRST CONTENTS PAINT) - CLIENT가 SERVER로부터 요청한 데이터를 브라우저에 최초로 출력시킨 상태
+-->
