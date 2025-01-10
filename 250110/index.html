@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keyframes animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #box {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 200px;
+        position: absolute;
+        color: #fff;
+        /* animation-name: circle; 애니메이션 이름(키프레임) */
+        /* animation-duration: 2s; 진행시간 */
+        /* animation-timing-function: linear; 애니메이션의 가속도 */
+        /* animation-direction: alternate; 진행방향 */
+        /* animation-iteration-count: infinite; 반복횟수 설정 */
+        animation: circle 2s linear none infinite alternate;
+        &:hover {
+          animation-play-state: paused; /*애니메이션의 실행상태*/
+        }
+        h1 {
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+      }
+      @keyframes circle {
+        0% {
+          left: 0;
+          transform: rotate(0);
+        }
+        50% {
+          left: 500px;
+        }
+        100% {
+          left: 500px;
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h1>Rotation</h1>
+    </div>
+  </body>
+</html>

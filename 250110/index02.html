@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      main {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #000;
+        text-align: center;
+        line-height: 90px;
+        div {
+          width: 100%;
+          height: 100%;
+          background: crimson;
+          color: #fff;
+          text-transform: uppercase;
+          /* transform: rotate(60deg) scale(0.8) skewY(10deg); */
+          /* transform: rotate(60deg) translateX(50px); */
+          /* transform: translateX(50px) rotate(60deg); */
+          transform: rotate(60deg);
+          /* transform-origin: 100% 100%; */
+          transform-origin: right bottom;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <!-- html을 통해서 만든 요소(element)들의 형태 위치를 변환시킬 때 사용(각도, 크기, 기울기, 위치)  -->
+        box
+      </div>
+    </main>
+  </body>
+</html>
