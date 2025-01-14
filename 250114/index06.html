@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>250114-06</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .layout {
+        border: 5px solid green;
+        width: 500px;
+        .parent {
+          display: flex;
+          div {
+            height: 200px;
+            background: crimson;
+            margin: 5px;
+            &.child1 {
+              flex: 1 1 100px;
+              /* flex-shrink: 1; */
+              /*줄어드는 비율*/
+              /* flex-basis: 100px; */
+            }
+            &.child2 {
+              flex: 1 2 100px;
+            }
+            &.child3 {
+              flex: 1 1 100px;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+      </div>
+    </div>
+  </body>
+</html>
