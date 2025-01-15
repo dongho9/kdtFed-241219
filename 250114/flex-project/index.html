@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex-Project</title>
+    <!-- jQuery -->
+    <script src="./jQuery/jquery-3.7.1.min.js"></script>
+    <!-- slickslider -->
+    <link rel="stylesheet" href="./slick/slick.css" type="text/css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" type="text/css" />
+    <script src="./slick/slick.js"></script>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/3cf85cf1af.js"
@@ -54,15 +60,304 @@
           </ul>
         </nav>
       </header>
-      <div class="heading">
-        <h1>The World's Best Cities</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-          dicta sequi ut cum consectetur eaque voluptates. Iure, vero, quo ipsam
-          possimus natus ducimus voluptatibus amet exercitationem molestiae, qui
-          minima quia?
-        </p>
-      </div>
+      <section id="intro" class="intro">
+        <div class="inner">
+          <div class="heading">
+            <h1>The World's Best Cities</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              dicta sequi ut cum consectetur eaque voluptates. Iure, vero, quo
+              ipsam possimus natus ducimus voluptatibus amet exercitationem
+              molestiae, qui minima quia?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="inner">
+          <div class="about_content">
+            <div class="desc">
+              <h2>About Best Cities in the World</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                dolorem aut laudantium quod at impedit rerum vitae ab, possimus
+                eum reprehenderit libero deleniti, officia id! Optio voluptatum
+                nostrum animi sit?
+              </p>
+              <a href="#">Visit The Place Information</a>
+            </div>
+            <div class="photo">
+              <img src="./img/about-img-01.jpg" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ranking" class="ranking">
+        <div class="inner">
+          <div class="ranking-content">
+            <h2>The World's 3 Best Cities of 2025</h2>
+            <div class="items">
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/best-city-01.jpg" alt="city01" />
+                </div>
+                <div class="down-desc">
+                  <span class="badge good">Good to Go</span>
+                  <h3>London, England</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti nulla, quisquam repudiandae non ipsam aliquam
+                    inventore voluptate eveniet odio! Minima nisi blanditiis
+                    tempore inventore rem ut sapiente a quam fugiat!
+                  </p>
+                  <a class="btn-explore" href="#">
+                    Explore
+                    <img src="./img/icon-arrow.png" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/best-city-02.jpg" alt="city02" />
+                </div>
+                <div class="down-desc">
+                  <span class="badge must">Must Go</span>
+                  <h3>NewYork, United States</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti nulla, quisquam repudiandae non ipsam aliquam
+                    inventore voluptate eveniet odio! Minima nisi blanditiis
+                    tempore inventore rem ut sapiente a quam fugiat!
+                  </p>
+                  <a class="btn-explore" href="#">
+                    Explore
+                    <img src="./img/icon-arrow.png" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/best-city-03.jpg" alt="city03" />
+                </div>
+                <div class="down-desc">
+                  <span class="badge good">Good to Go</span>
+                  <h3>Paris, France</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti nulla, quisquam repudiandae non ipsam aliquam
+                    inventore voluptate eveniet odio! Minima nisi blanditiis
+                    tempore inventore rem ut sapiente a quam fugiat!
+                  </p>
+                  <a class="btn-explore" href="#">
+                    Explore
+                    <img src="./img/icon-arrow.png" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="testimonial">
+        <div class="inner">
+          <div class="testimonial-content">
+            <h2>What <b>our customers</b> are saying</h2>
+            <hr />
+            <div class="mySlider">
+              <div>
+                <p class="client">
+                  <img src="./img/client-01.jpg" alt="client" />
+                  <span><b>IU</b>Seoul, Korea</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/client-02.jpg" alt="client" />
+                  <span><b>Kate Whitney</b>LosAngeles, US</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/client-03.jpg" alt="client03" />
+                  <span><b>Kelly Muvils</b>NewYork, US</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/client-04.jpg" alt="client04" />
+                  <span><b>Oliver</b>California, US</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/client-05.jpg" alt="client05" />
+                  <span><b>Sophia</b>London, UK</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/client-06.jpg" alt="client06" />
+                  <span><b>Charlotte</b>Washington, US</span>
+                </p>
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolores accusantium obcaecati natus, dolore,
+                  consequuntur aspernatur similique et corporis maiores eum?
+                  Nostrum incidunt explicabo unde soluta commodi magnam cum ab?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="callaction" class="callaction">
+        <div class="callaction-heading">
+          <h2>
+            The Most Simple & <b>Powerful Way</b><br />
+            To Book Your Trip
+          </h2>
+          <a href="#">GET EARLY ACCESS</a>
+        </div>
+      </section>
+      <section id="blog" class="blog">
+        <div class="inner">
+          <div class="blog-content">
+            <div class="blog-header">
+              <h6>Feature article</h6>
+              <h2>Can Americans visit Mexico Right now?</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur tempora maiores ducimus sunt dignissimos soluta
+                quibusdam magnam cum totam amet repellat qui voluptatibus
+                repellendus facere quaerat, quam provident aliquid impedit!
+              </p>
+              <a href="#" class="btn-explore">
+                Read More
+                <img src="./img/icon-arrow.png" alt="arrow" />
+              </a>
+            </div>
+            <hr class="divider" />
+            <div class="post-content">
+              <div class="recent-post-items">
+                <h6>most recent</h6>
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="./img/most-recent-01.jpg" alt="recent01" />
+                  </div>
+                  <div class="post-desc">
+                    <h3>world ocean travel</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore, necessitatibus voluptatem. Earum, autem
+                      mollitia. Optio ea, fugiat fugit nobis sapiente
+                      perspiciatis quibusdam, quis nesciunt assumenda vero nam
+                      illo animi accusamus!
+                    </p>
+                    <span>Dec 08, 2024</span>
+                  </div>
+                </div>
+                <hr class="divider" />
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="./img/most-recent-02.jpg" alt="recent02" />
+                  </div>
+                  <div class="post-desc">
+                    <h3>come to south korea</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore, necessitatibus voluptatem. Earum, autem
+                      mollitia. Optio ea, fugiat fugit nobis sapiente
+                      perspiciatis quibusdam, quis nesciunt assumenda vero nam
+                      illo animi accusamus!
+                    </p>
+                    <span>Jan 15, 2025</span>
+                  </div>
+                </div>
+                <hr class="divider" />
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="./img/most-recent-03.jpg" alt="recent03" />
+                  </div>
+                  <div class="post-desc">
+                    <h3>vietnam & cambodia</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore, necessitatibus voluptatem. Earum, autem
+                      mollitia. Optio ea, fugiat fugit nobis sapiente
+                      perspiciatis quibusdam, quis nesciunt assumenda vero nam
+                      illo animi accusamus!
+                    </p>
+                    <span>Nov 17, 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="shared-post-items">
+                <h6>most shared</h6>
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="./img/most-shared-01.jpg" alt="shared01" />
+                  </div>
+                  <div class="post-desc">
+                    <h3>events in nyc</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quis dolor repellat, labore dolore officiis esse
+                      obcaecati omnis error ad atque vel consequatur
+                      voluptatibus, earum vero possimus vitae ipsum voluptatum.
+                    </p>
+                    <span>Jan 15, 2025</span>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="./img/most-shared-02.jpg" alt="shared02" />
+                  </div>
+                  <div class="post-desc">
+                    <h3>festivals</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quis dolor repellat, labore dolore officiis esse
+                      obcaecati omnis error ad atque vel consequatur
+                      voluptatibus, earum vero possimus vitae ipsum voluptatum.
+                    </p>
+                    <span>Dec 21, 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

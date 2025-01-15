@@ -30,3 +30,14 @@ window.addEventListener("scroll", () => {
     document.querySelector("header").classList.remove("active");
   }
 });
+
+/*slick slider*/
+$(document).ready(function () {
+  $(".mySlider").slick({
+    slidesToShow: 3, //3개씩 보임
+    slidesToScroll: 3, //3개씩 스크롤
+    infinite: false, //무한 슬라이드
+    dots: true, //pagination
+    speed: 300, // 속도
+  });
+});
