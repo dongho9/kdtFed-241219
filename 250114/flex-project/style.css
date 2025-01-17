@@ -10,10 +10,7 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: var(--montserrat-font);
-<<<<<<< HEAD
-=======
   overflow-x: hidden;
->>>>>>> 58538c4 (250117-01)
 }
 .inner {
   width: 1300px;
@@ -92,12 +89,9 @@ header {
       }
     }
   }
-<<<<<<< HEAD
-=======
   .trigger {
     display: none;
   }
->>>>>>> 58538c4 (250117-01)
 }
 
 .intro {
@@ -446,8 +440,6 @@ footer {
     }
   }
 }
-<<<<<<< HEAD
-=======
 
 .gototop {
   width: 50px;
@@ -469,4 +461,3 @@ footer {
     bottom: 20px;
   }
 }
->>>>>>> 58538c4 (250117-01)

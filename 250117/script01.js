@@ -1,5 +1,4 @@
 // 변수 안에 담을 수 있는 값 => 자료형
-
 // 1)원시타입 = Primitive type
 // number = 숫자
 // string = 문자

@@ -26,15 +26,9 @@
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     document.querySelector("header").classList.add("active");
-<<<<<<< HEAD
   } else {
     document.querySelector("header").classList.remove("active");
-=======
     document.querySelector(".gototop").classList.add("active");
-  } else {
-    document.querySelector("header").classList.remove("active");
-    document.querySelector(".gototop").classList.remove("active");
->>>>>>> 58538c4 (250117-01)
   }
 });
 
@@ -46,8 +40,6 @@ $(document).ready(function () {
     infinite: false, //무한 슬라이드
     dots: true, //pagination
     speed: 300, // 속도
-<<<<<<< HEAD
-=======
     responsive: [
       //반응형
       {
@@ -106,6 +98,5 @@ menus.forEach((menu) => {
       // 타겟 포지션값으로 이동
       behavior: "smooth",
     });
->>>>>>> 58538c4 (250117-01)
   });
 });
