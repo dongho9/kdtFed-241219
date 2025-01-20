@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        font-weight: bold;
+        text-transform: capitalize;
+        color: #fff;
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 300px 1fr 300px;
+        grid-template-rows: 100px 1fr 100px;
+        header {
+          grid-row: 1;
+          grid-column: 1 / span 3;
+          text-align: center;
+          background: rosybrown;
+          line-height: 100px;
+        }
+        nav,
+        section,
+        aside {
+          display: grid;
+          background: salmon;
+          border: 1px solid #fff;
+        }
+        nav {
+          display: grid;
+          align-items: center;
+          text-align: center;
+        }
+        aside,
+        section {
+          div {
+            border-bottom: 1px solid #fff;
+            text-align: center;
+            display: grid;
+            align-items: center;
+          }
+        }
+        section {
+          grid-template-columns: repeat(4, auto);
+          div {
+            text-align: center;
+            width: 100%;
+          }
+        }
+        aside {
+          grid-template-rows: 200px 1fr 200px;
+        }
+        footer {
+          grid-row: 3;
+          grid-column: 1 / span 3;
+          text-align: center;
+          background: rosybrown;
+          line-height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header>header</header>
+      <nav>navigation</nav>
+      <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </section>
+      <aside>
+        <div>top</div>
+        <div>aside</div>
+        <div>bottom</div>
+      </aside>
+      <footer>footer</footer>
+    </main>
+  </body>
+</html>
