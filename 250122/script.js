@@ -19,3 +19,5 @@ for (let i = 1; i <= 5; i++) {
   tag += "</tr>";
 }
 tag += "</table>";
+
+document.write(tag);
